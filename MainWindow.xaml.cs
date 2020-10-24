@@ -28,6 +28,7 @@ namespace WpfCalculator
         {
             txtMain.Text += 3;
         }
+        
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
