@@ -4,7 +4,7 @@
 
 ![Active](https://img.shields.io/badge/langage-100%25%20C%23-blueviolet)
 ![Active](https://img.shields.io/badge/French-100%20%25-9cf)
-![Active](https://img.shields.io/badge/Quality-D%20%2F%20C-ff69b4)
+![Active](https://img.shields.io/badge/C-ff69b4)
 
 CSharpCalculatrice est une calculatrice faite en Xaml/C#.
 
