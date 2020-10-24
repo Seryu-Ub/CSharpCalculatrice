@@ -129,6 +129,7 @@ namespace WpfCalculator
             lblAction.Content = "/";
             txtMain.Clear();
         }
+        
 
         private void btnRND_Click(object sender, RoutedEventArgs e)
         {
