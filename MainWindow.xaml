@@ -1,0 +1,77 @@
+﻿<Window x:Class="WpfCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCalculator"
+        mc:Ignorable="d"
+        Title="SeryûApp" Height="590.064" Width="568.898" MinHeight="590.064" MinWidth="613.898" MaxWidth="613.898" MaxHeight="590.064">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid Margin="0,0,-8,0" Height="559" VerticalAlignment="Center" HorizontalAlignment="Center" Width="614">
+        <Grid.Background>
+            <ImageBrush ImageSource="ezgif-4-f6a57fe728a5.png"/>
+        </Grid.Background>
+        <TextBox x:Name="txtMain" HorizontalAlignment="Center" Height="62" Margin="80,26,76,471" TextWrapping="Wrap" Width="458" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" TextAlignment="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFC6B2FC" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="78,209,466,0" Height="54" FontWeight="Bold" FontSize="22" Click="btn1_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btnSQR" Content="SQR" HorizontalAlignment="Center" VerticalAlignment="Top" Width="65" Margin="473,209,76,0" Height="54" FontSize="18" FontWeight="Bold" Click="btnSQR_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Center" VerticalAlignment="Top" Width="64" Margin="376,131,174,0" Height="54" FontSize="22" FontWeight="Bold" Click="btnPlus_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="272,210,272,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn3_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="177,210,365,0" Height="54" FontWeight="Bold" FontSize="22" Click="btn2_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="76,290,466,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn4_Click" RenderTransformOrigin="0.755,0.502" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btnSQRT" Content="SQRT" HorizontalAlignment="Center" VerticalAlignment="Top" Width="65" Margin="473,290,76,0" Height="54" FontSize="18" FontWeight="Bold" Click="btnSQRT_Click" RenderTransformOrigin="0.881,0.474" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btnMoins" Content="-" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="372,210,171,0" Height="54" FontSize="22" FontWeight="Bold" Click="btnMoins_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="272,290,271,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn6_Click" Background="#FFB783F5" RenderTransformOrigin="0.952,0.611" Opacity="0.9"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="177,290,365,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn5_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="76,373,466,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn7_Click" Background="#FFB783F5"/>
+        <Button x:Name="SIN" Content="SIN" HorizontalAlignment="Center" VerticalAlignment="Top" Width="65" Margin="473,374,76,0" Height="54" FontSize="18" FontWeight="Bold" Click="SIN_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btnFois" Content="*" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="372,290,171,0" Height="54" FontSize="22" FontWeight="Bold" Click="btnFois_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="273,373,271,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn9_Click" Background="#FFB783F5"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="177,373,365,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn8_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btnVirgule" Content="." HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="78,460,466,0" Height="54" FontSize="22" FontWeight="Bold" Click="btnVirgule_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Button x:Name="btnRND" Content="RND" HorizontalAlignment="Center" VerticalAlignment="Top" Width="64" Margin="474,131,76,0" Height="54" FontSize="18" FontWeight="Bold" Click="btnRND_Click" RenderTransformOrigin="4.332,0.669">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnDiviser" Content="/" HorizontalAlignment="Center" VerticalAlignment="Top" Width="64" Margin="376,373,174,0" Height="54" FontSize="22" FontWeight="Bold" Click="btnDiviser_Click" Background="#FFB783F5"/>
+        <Button x:Name="btnCE" Content="CE" HorizontalAlignment="Center" VerticalAlignment="Top" Width="258" Margin="76,130,272,0" Height="54" FontSize="22" FontWeight="Bold" Click="btnCE_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB783F5" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" Margin="177,460,365,0" Height="54" FontSize="22" FontWeight="Bold" Click="btn0_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Label x:Name="lblHistorique" Content="" HorizontalAlignment="Center" Margin="473,95,74,0" VerticalAlignment="Top" Height="26" Width="64" RenderTransformOrigin="0.429,0.923" BorderBrush="#FF060606" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold">
+            <Label.Background>
+                <SolidColorBrush Color="#FFC6B2FC" Opacity="0.8"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="btnEnter" Content="=" HorizontalAlignment="Center" Margin="273,460,73,0" VerticalAlignment="Top" Width="260" Height="54" FontSize="22" FontWeight="Bold" Click="Button_Click" Background="#FFB783F5" Opacity="0.9"/>
+        <Label x:Name="lblAction" Content="" HorizontalAlignment="Center" Margin="419,95,147,0" VerticalAlignment="Top" Background="{x:Null}" Width="48" RenderTransformOrigin="0.694,0.385" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontWeight="Bold"/>
+    </Grid>
+</Window>
