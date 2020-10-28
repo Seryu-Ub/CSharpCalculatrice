@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Media;
+using System.Windows.Controls;
 
 namespace WpfCalculator
 {
@@ -12,57 +12,6 @@ namespace WpfCalculator
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 1;
-        }
-
-        private void btn2_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 2;
-        }
-
-        private void btn3_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 3;
-        }
-        
-
-        private void btn4_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 4;
-        }
-
-        private void btn5_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 5;
-        }
-
-        private void btn6_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 6;
-        }
-
-        private void btn7_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 7;
-        }
-
-        private void btn8_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 8;
-        }
-
-        private void btn9_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 9;
-        }
-
-        private void btn0_Click(object sender, RoutedEventArgs e)
-        {
-            txtMain.Text += 0;
         }
 
         private void btnVirgule_Click(object sender, RoutedEventArgs e)
@@ -79,7 +28,7 @@ namespace WpfCalculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string opperator = Convert.ToString (lblAction.Content);
+            string opperator = Convert.ToString(lblAction.Content);
             if (opperator == "+")
             {
                 double result = Convert.ToDouble(txtMain.Text) + Convert.ToDouble(lblHistorique.Content);
@@ -134,7 +83,7 @@ namespace WpfCalculator
         private void btnRND_Click(object sender, RoutedEventArgs e)
         {
             Random rnd = new Random();
-            int random = rnd.Next(1,100);
+            int random = rnd.Next(1, 100);
             txtMain.Text = Convert.ToString(random);
         }
 
@@ -155,8 +104,14 @@ namespace WpfCalculator
         private void btnSQR_Click(object sender, RoutedEventArgs e)
         {
             double main = Convert.ToDouble(txtMain.Text);
-            double a = Math.Pow(main,2);
+            double a = Math.Pow(main, 2);
             txtMain.Text = Convert.ToString(a);
+        }
+
+        public void btn1_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            txtMain.Text = txtMain.Text + $"{btn.Content}";
         }
     }
 }
