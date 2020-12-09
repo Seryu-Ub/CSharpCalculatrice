@@ -1,4 +1,4 @@
-<img width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Seryû" src="https://cdn.discordapp.com/attachments/759495663275999283/774716442381385738/ezgif-3-9f018e83aae6.gif">
+<img width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Seryû" src="https://cdn.discordapp.com/attachments/759495663275999283/786289149442261032/ezgif-6-439762e1869e.gif">
 
 # 🐍 CSharpCalculatrice 🐍
 
